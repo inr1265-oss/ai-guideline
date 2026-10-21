@@ -6,11 +6,12 @@
 <title>신성대학교 AI 활용 가이드라인</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
+@font-face{font-family:"CircNum";src:url(data:font/woff2;base64,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) format("woff2");unicode-range:U+2460-2473;font-display:block}
 /* Layout: single reading column, sticky section nav on top, document tables kept as-is */
 :root{
   --bg:#fbf8f1; --paper:#ffffff; --fg:#26241f; --muted:#6f685c; --line:#dcd4c3;
   --ink:#3b3833; --red:#9a3b33; --red-bg:#f6e4e3; --gold:#b7822a; --gold-bg:#f9efd8; --gray-bg:#ecebe6;
-  --display:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; --body:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --display:"CircNum","Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; --body:"CircNum","Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#1c1a16; --paper:#24211c; --fg:#ece7dc; --muted:#a79f90; --line:#3d3830; --ink:#d9d3c6; --red:#e08a80; --red-bg:#3a2522; --gold:#d9a955; --gold-bg:#3a2f1c; --gray-bg:#2e2b25; color-scheme:dark } }
 :root[data-theme="dark"]{ --bg:#1c1a16; --paper:#24211c; --fg:#ece7dc; --muted:#a79f90; --line:#3d3830; --ink:#d9d3c6; --red:#e08a80; --red-bg:#3a2522; --gold:#d9a955; --gold-bg:#3a2f1c; --gray-bg:#2e2b25; color-scheme:dark }
@@ -46,7 +47,6 @@ td p,th p{margin:0 0 3px} td p:last-child{margin:0}
 .callout.example{border-color:var(--gold);background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold)}
 footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-.cn{display:inline-flex;align-items:center;justify-content:center;width:1.35em;height:1.35em;border:1px solid currentColor;border-radius:50%;font-size:.78em;font-weight:500;line-height:1;vertical-align:-.12em;margin-right:.3em;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
@@ -64,9 +64,9 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </nav>
 <main>
 <div class="callout key"><p><strong>[핵심] 이 문서의 핵심</strong></p>
-<p><span class="cn">1</span> 본교는 생성형 AI 활용을 <strong>원칙적으로 허용</strong>함 - 다만 범위는 <strong>교과목마다 다름</strong></p>
-<p><span class="cn">2</span> 어느 단계에서든 <strong>사용 사실 명시 · 사실 검증 · 본인 책임</strong> 세 가지는 예외 없이 적용됨</p>
-<p><span class="cn">3</span> 내 교과목의 단계는 <strong>강의계획서 「AI 활용」 항목</strong>에서 확인</p></div>
+<p>① 본교는 생성형 AI 활용을 <strong>원칙적으로 허용</strong>함 - 다만 범위는 <strong>교과목마다 다름</strong></p>
+<p>② 어느 단계에서든 <strong>사용 사실 명시 · 사실 검증 · 본인 책임</strong> 세 가지는 예외 없이 적용됨</p>
+<p>③ 내 교과목의 단계는 <strong>강의계획서 「AI 활용」 항목</strong>에서 확인</p></div>
 <h2 id="s1">1. 총칙</h2>
 <h3>1.1 목적</h3>
 <p>이 가이드라인은 신성대학교의 교육·학습 활동에서 생성형 AI를 책임 있게 활용할 수 있도록 행동 기준을 제시하는 것을 목적으로 한다.</p>
@@ -144,12 +144,12 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 <tr>
 <td>학습자 준수사항</td>
 <td>· 사용하지 않기</td>
-<td><p><span class="cn">1</span> 허용 범위 확인</p>
-<p><span class="cn">2</span> 필요 시 사전 승인</p>
-<p><span class="cn">3</span> 출처 표기</p>
-<p><span class="cn">4</span> 요구 시 활용 보고서 제출</p></td>
-<td><p><span class="cn">1</span> 출처 표기</p>
-<p><span class="cn">2</span> 검토·수정 후 제출</p></td>
+<td><p>① 허용 범위 확인</p>
+<p>② 필요 시 사전 승인</p>
+<p>③ 출처 표기</p>
+<p>④ 요구 시 활용 보고서 제출</p></td>
+<td><p>① 출처 표기</p>
+<p>② 검토·수정 후 제출</p></td>
 </tr>
 <tr>
 <td>부정행위 요건</td>
@@ -179,8 +179,8 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 <p>한 교과목에서 허용된 방식이 <strong>다른 교과목에서는 부정행위</strong>에 해당할 수 있음</p>
 <p>이전 학기의 기준이나 타 교과목의 기준을 <strong>임의로 적용하지 않기</strong></p></div>
 <div class="callout caution"><p><strong>[주의] 3단계에서도 예외 없이 적용되는 두 가지</strong></p>
-<p><span class="cn">1</span> <strong>명시 의무</strong> - 자유롭게 사용하더라도 <strong>사용 사실은 반드시 밝히기</strong></p>
-<p><span class="cn">2</span> <strong>검토·수정 의무</strong> - 검토·수정 없이 제출하면 <strong>3단계에서도 부정행위</strong></p>
+<p>① <strong>명시 의무</strong> - 자유롭게 사용하더라도 <strong>사용 사실은 반드시 밝히기</strong></p>
+<p>② <strong>검토·수정 의무</strong> - 검토·수정 없이 제출하면 <strong>3단계에서도 부정행위</strong></p>
 <p>3단계의 의미 - 「명시하지 않아도 됨」이 <strong>아니라</strong> 「<strong>사전 승인 없이 사용할 수 있음</strong>」</p></div>
 <h3>2.3 강의계획서 기재 예시</h3>
 <p>담당 교수자는 아래와 같은 방식으로 「AI 활용」 항목을 작성할 수 있다. (유형 A·B·C 표준 문구는 본 문서 부록 1 참조)</p>
@@ -196,27 +196,27 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </thead>
 <tbody>
 <tr>
-<td><span class="cn">1</span> 학문적 진실성</td>
+<td>① 학문적 진실성</td>
 <td>AI가 작성한 문장은 본인의 언어로 재구성하기</td>
 <td>AI 답변을 복사하여 그대로 제출</td>
 </tr>
 <tr>
-<td><span class="cn">2</span> 인간 주도성과 책임</td>
+<td>② 인간 주도성과 책임</td>
 <td>주제 선정·판단·결론은 본인이 결정하기</td>
 <td>AI가 도출한 결론을 검토 없이 수용</td>
 </tr>
 <tr>
-<td><span class="cn">3</span> 투명성</td>
+<td>③ 투명성</td>
 <td>사용한 도구·목적·범위 명시하기</td>
 <td>AI를 사용하고도 명시하지 않음</td>
 </tr>
 <tr>
-<td><span class="cn">4</span> 공정성</td>
+<td>④ 공정성</td>
 <td>유료 도구 없이도 수행 가능하도록 과제 설계하기</td>
 <td>유료 AI 구독을 전제로 한 과제 부여</td>
 </tr>
 <tr>
-<td><span class="cn">5</span> 정보 보호</td>
+<td>⑤ 정보 보호</td>
 <td>개인정보·평가 문항·미공개 자료 입력하지 않기</td>
 <td>학생 명단을 입력하여 성적 산출 요청</td>
 </tr>
@@ -269,19 +269,19 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </thead>
 <tbody>
 <tr>
-<td><span class="cn">1</span> AI 활용 단계 결정</td>
+<td>① AI 활용 단계 결정</td>
 <td>과제별, 시험별로 다르게 정해도 됨(사례보고서는 2단계, 퀴즈 등은 1단계)</td>
 </tr>
 <tr>
-<td><span class="cn">2</span> AI 활용 단계를 강의계획서 명시</td>
+<td>② AI 활용 단계를 강의계획서 명시</td>
 <td>본 문서 부록 1의 표준 문구를 복사하여 사용</td>
 </tr>
 <tr>
-<td><span class="cn">3</span> 첫 수업 구두 안내 및 질의응답</td>
+<td>③ 첫 수업 구두 안내 및 질의응답</td>
 <td>강의계획서 기재만으로는 고지한 것으로 보지 않음</td>
 </tr>
 <tr>
-<td><span class="cn">4</span> 과제 평가 방식 점검</td>
+<td>④ 과제 평가 방식 점검</td>
 <td>AI로 대체되지 않는 과제인지 확인(4.2참고)</td>
 </tr>
 </tbody>
@@ -336,7 +336,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 <p><strong>- 형식적인 문체</strong>(보고서 투로 딱딱하게 쓴글)</p>
 </blockquote>
 <p><strong>- 분량이 짧은 글</strong>(판단할 글 분량이 적어서 오류가 커짐)</p>
-<p><strong>. 판정 근거</strong> - <span class="cn">1</span> <strong>초안 및 수정 기록</strong> <span class="cn">2</span> <strong>학생의</strong> <strong>구두 설명</strong> <span class="cn">3</span> <strong>사고 전개의 일관성</strong>을 종합</p>
+<p><strong>. 판정 근거</strong> - ① <strong>초안 및 수정 기록</strong> ② <strong>학생의</strong> <strong>구두 설명</strong> ③ <strong>사고 전개의 일관성</strong>을 종합</p>
 <p>. 학습자에게 <strong>소명 기회를 반드시 부여</strong>하고, 성적 산출과 최종 판단은 <strong>교수자가 수행</strong></p></div>
 <h3>4.4 수업 전에 결정해야 할 것</h3>
 <p>☐ AI 활용 허용 범위 <strong>: 1·2·3단계 중 하나를 선택했는가</strong></p>
@@ -366,19 +366,19 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </thead>
 <tbody>
 <tr>
-<td><span class="cn">1</span> 확인 - 교과목의 단계 확인</td>
+<td>① 확인 - 교과목의 단계 확인</td>
 <td>강의계획서에서 확인, 불분명하면 사전에 교수자에게 문의 (미확인 사용은 소명 사유 불인정)</td>
 </tr>
 <tr>
-<td><span class="cn">2</span> 재구성 - 본인의 언어로 고쳐 쓰기</td>
+<td>② 재구성 - 본인의 언어로 고쳐 쓰기</td>
 <td>AI 생성 내용을 그대로 제출하지 않고, 사실을 검증한 후 본인의 분석·판단·경험을 반영하여 재구성하기</td>
 </tr>
 <tr>
-<td><span class="cn">3</span> 명시 - 「AI 활용 명시란」 작성</td>
+<td>③ 명시 - 「AI 활용 명시란」 작성</td>
 <td>AI의 실질적인 기여가 있는 경우 활용 사실을 명시하고, 도구·시점·목적·범위·검증 방법 기재</td>
 </tr>
 <tr>
-<td><span class="cn">4</span> 검증 - 사실관계 확인</td>
+<td>④ 검증 - 사실관계 확인</td>
 <td>AI가 제시한 사실·통계·문헌은 원문을 직접 확인</td>
 </tr>
 <tr>
@@ -460,10 +460,10 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </table></div>
 <p><strong>절차</strong></p>
 <blockquote>
-<p><span class="cn">1</span> 의심 사례 인지 - 탐지 도구 결과는 참고자료일 뿐</p>
-<p><span class="cn">2</span> 교수자의 1차 확인 - 초안 기록 요청, 구두 질의</p>
-<p><span class="cn">3</span> <strong>학습자에게 소명 기회 부여</strong> ← 반드시 보장</p>
-<p><span class="cn">4</span> 교수자의 종합 판단</p>
+<p>① 의심 사례 인지 - 탐지 도구 결과는 참고자료일 뿐</p>
+<p>② 교수자의 1차 확인 - 초안 기록 요청, 구두 질의</p>
+<p>③ <strong>학습자에게 소명 기회 부여</strong> ← 반드시 보장</p>
+<p>④ 교수자의 종합 판단</p>
 </blockquote>
 <div class="tbl"><table>
 <thead>
@@ -600,11 +600,11 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </ul>
 <h3>8.2 개정 절차</h3>
 <blockquote>
-<p><span class="cn">1</span> <strong>개정 제안</strong> - 구성원 누구나 · AID교육혁신본부 접수</p>
-<p><span class="cn">2</span> <strong>검토</strong> - AID교육혁신본부 (필요시 관련 부서·학과 의견 수렴)</p>
-<p><span class="cn">3</span> <strong>심의·확정</strong> - 경미한 보완은 본부 내부 확정, 주요 내용 변경은 관련 위원회 심의</p>
-<p><span class="cn">4</span> <strong>공표</strong> - 학내 공지 · 개정이력표 갱신</p>
-<p><span class="cn">5</span> <strong>시행</strong> - 공표일부터 시행 (별도 규정이 없는 한)</p>
+<p>① <strong>개정 제안</strong> - 구성원 누구나 · AID교육혁신본부 접수</p>
+<p>② <strong>검토</strong> - AID교육혁신본부 (필요시 관련 부서·학과 의견 수렴)</p>
+<p>③ <strong>심의·확정</strong> - 경미한 보완은 본부 내부 확정, 주요 내용 변경은 관련 위원회 심의</p>
+<p>④ <strong>공표</strong> - 학내 공지 · 개정이력표 갱신</p>
+<p>⑤ <strong>시행</strong> - 공표일부터 시행 (별도 규정이 없는 한)</p>
 </blockquote>
 <h3>8.3 정기 검토</h3>
 <p>매 학년도 시작 전 1회 이상 정기적으로 검토한다</p>
@@ -682,38 +682,38 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </table></div>
 <h2 id="a1">부록 1. 강의계획서 표준 문구</h2>
 <p>아래 문구는 <strong>그대로 복사해서 강의계획서에 붙여 쓸 수 있도록</strong> 작성되었다. <strong>유형 A·B·C 중 하나를 선택</strong>하고, 대괄호 [ ] 안의 예시만 교과목에 맞게 바꾼다.</p>
-<h4><span class="cn">1</span> 공통 안내문 - 세 유형 앞에 공통으로 넣는다</h4>
+<h4>① 공통 안내문 - 세 유형 앞에 공통으로 넣는다</h4>
 <div class="tbl"><table>
 <thead>
 <tr>
 <th><p>■ 생성형 AI 활용 방침</p>
 <p>본 교과목은 신성대학교 「AI 활용 가이드라인」에 따라 아래와 같이 생성형 AI(ChatGPT, Claude, Gemini 등)의 활용 범위를 정합니다. 방침을 위반한 경우 학습 윤리 위반으로 간주되어 성적상 불이익을 받을 수 있습니다. 판단이 어려운 경우 반드시 담당 교수에게 사전에 문의하십시오.</p></div>
-<h4><span class="cn">2</span> 【유형 A】 사용 금지</h4>
+<h4>② 【유형 A】 사용 금지</h4>
 <div class="callout note"><p>AI 활용 범위: 사용 금지</p>
 <p>본 교과목의 모든 학습 활동(수업 활동, 과제, 시험)에서 생성형 AI의 사용을 금지합니다.</p>
 <p>· 사유: 본 교과목은 [예: 평가의 기초 술기와 임상 추론 능력]을 형성하는 단계로, 학습자가 직접 사고하고 표현하는 과정 자체가 학습 목표이기 때문입니다.</p>
 <p>· 생성형 AI를 사용한 것으로 확인될 경우 부정행위로 처리합니다.</p>
 <p>· 다만 맞춤법 검사기, 번역기 등 학습 목표와 무관한 보조 도구의 사용은 예외로 합니다. 예외로 인정할 도구는 담당 교수가 정합니다.</p></div>
-<h4><span class="cn">3</span> 【유형 B】 제한적 사용 - 사전 승인 또는 출처 표기 후 사용</h4>
+<h4>③ 【유형 B】 제한적 사용 - 사전 승인 또는 출처 표기 후 사용</h4>
 <div class="callout note"><p>AI 활용 범위: 제한적 사용 (사전 승인 또는 출처 표기 후 사용)</p>
 <p>아래 범위에서 생성형 AI를 활용할 수 있습니다.</p>
 <p>· 허용하는 활용: [예: 자료 탐색, 아이디어 발산, 개요 작성, 문장 다듬기]</p>
 <p>· 금지하는 활용: [예: 과제 본문의 초안 생성, 사례 분석의 결론 도출, 참고문헌 목록 작성]</p>
 <p>· 허용 도구: [예: 제한 없음 / ChatGPT, Claude에 한함]</p>
 <p>활용 시 지켜야 할 사항</p>
-<p><span class="cn">1</span> 과제 말미에 「AI 활용 명시란」을 작성하여 사용 도구·목적·범위를 밝힙니다. (양식은 [LMS] 참조)</p>
-<p><span class="cn">2</span> AI가 생성한 문장을 인용할 경우 [APA / MLA / 국문] 형식으로 출처를 표기합니다.</p>
-<p><span class="cn">3</span> AI가 제시한 사실·통계·참고문헌은 반드시 원자료로 직접 확인한 뒤 사용합니다.</p>
-<p><span class="cn">4</span> 위 「금지하는 활용」에 해당하는 사용이 필요한 경우, 사전에 담당 교수의 승인을 받아야 합니다.</p>
+<p>① 과제 말미에 「AI 활용 명시란」을 작성하여 사용 도구·목적·범위를 밝힙니다. (양식은 [LMS] 참조)</p>
+<p>② AI가 생성한 문장을 인용할 경우 [APA / MLA / 국문] 형식으로 출처를 표기합니다.</p>
+<p>③ AI가 제시한 사실·통계·참고문헌은 반드시 원자료로 직접 확인한 뒤 사용합니다.</p>
+<p>④ 위 「금지하는 활용」에 해당하는 사용이 필요한 경우, 사전에 담당 교수의 승인을 받아야 합니다.</p>
 <p>미표기 제출은 출처를 밝히지 않은 것과 동일하게 처리합니다.</p></div>
-<h4><span class="cn">4</span> 【유형 C】 사용 허용 - 자유롭게 사용</h4>
+<h4>④ 【유형 C】 사용 허용 - 자유롭게 사용</h4>
 <div class="callout note"><p>AI 활용 범위: 사용 허용 (자유롭게 사용)</p>
 <p>본 교과목에서는 생성형 AI를 제약 없이 활용할 수 있습니다. AI를 능동적으로 활용하는 능력 자체를 학습 목표의 하나로 봅니다.</p>
 <p>다만 다음 두 가지는 예외 없이 적용됩니다.</p>
-<p><span class="cn">1</span> 사용한 도구·목적·범위를 「AI 활용 명시란」에 밝힙니다.</p>
-<p><span class="cn">2</span> AI 생성물을 검토·수정 없이 그대로 제출하는 것은 부정행위입니다. 반드시 사실을 검증하고 자신의 언어로 재구성하십시오.</p>
+<p>① 사용한 도구·목적·범위를 「AI 활용 명시란」에 밝힙니다.</p>
+<p>② AI 생성물을 검토·수정 없이 그대로 제출하는 것은 부정행위입니다. 반드시 사실을 검증하고 자신의 언어로 재구성하십시오.</p>
 <p>평가는 AI를 썼는지 여부로 하지 않습니다. [교과목의 채점 기준 또는 루브릭]에 따라 평가합니다.</p></div>
-<h4><span class="cn">5</span> 과제별·시험별로 다르게 적용할 때 (기재 예시)</h4>
+<h4>⑤ 과제별·시험별로 다르게 적용할 때 (기재 예시)</h4>
 <div class="callout tip"><strong>평가 항목</strong></th>
 <th><strong>AI 활용 범위</strong></th>
 <th><strong>비고</strong></th>
@@ -742,7 +742,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </tr>
 </tbody>
 </table></div>
-<h4><span class="cn">6</span> 첫 수업 구두 안내 체크리스트</h4>
+<h4>⑥ 첫 수업 구두 안내 체크리스트</h4>
 <p>☐ 이 과목의 AI 활용 범위는 <strong>몇 단계인가</strong>를 명확히 말했는가</p>
 <p>☐ 왜 <strong>그 단계인지 학습 목표와 연결해 설명했는가</strong></p>
 <p>☐ 출처 표기 방법<strong>을 실제 예시로 보여 주었는가</strong></p>
@@ -760,39 +760,39 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 </thead>
 <tbody>
 <tr>
-<td><span class="cn">1</span> 사용 도구·버전</td>
+<td>① 사용 도구·버전</td>
 <td>예: ChatGPT (GPT-5, 2026년 8월 버전)</td>
 </tr>
 <tr>
-<td><span class="cn">2</span> 사용한 단계</td>
+<td>② 사용한 단계</td>
 <td>예: 주제 선정 단계, 초안 작성 후 문장 교정 단계</td>
 </tr>
 <tr>
-<td><span class="cn">3</span> 주요 프롬프트</td>
+<td>③ 주요 프롬프트</td>
 <td>실제로 입력한 프롬프트를 요지 또는 전체로 기재</td>
 </tr>
 <tr>
-<td><span class="cn">4</span> AI의 응답 요지</td>
+<td>④ AI의 응답 요지</td>
 <td>어떤 답변을 받았는지</td>
 </tr>
 <tr>
-<td><span class="cn">5</span> 재구성 과정</td>
+<td>⑤ 재구성 과정</td>
 <td>AI 응답을 어떻게 바꾸어 본인의 글로 만들었는지</td>
 </tr>
 <tr>
-<td><span class="cn">6</span> 검증 내용</td>
+<td>⑥ 검증 내용</td>
 <td>사실·통계·참고문헌을 어떤 원자료로 확인했는지</td>
 </tr>
 <tr>
-<td><span class="cn">7</span> 채택하지 않은 부분</td>
+<td>⑦ 채택하지 않은 부분</td>
 <td>AI 제안 중 쓰지 않은 것과 그 이유</td>
 </tr>
 <tr>
-<td><span class="cn">8</span> 성찰</td>
+<td>⑧ 성찰</td>
 <td>이 과정에서 무엇을 배웠는지</td>
 </tr>
 <tr>
-<td colspan="2"><p>[진행 팁] <strong><span class="cn">7</span>번 항목을 권함</strong></p>
+<td colspan="2"><p>[진행 팁] <strong>⑦번 항목을 권함</strong></p>
 <p>「AI가 제안했지만 쓰지 않은 것과 그 이유」<strong>를 쓰게 하면 학습자가 AI를 비판적으로 검토했는지가 가장 잘 드러남 - 채점 시 변별력이 높은 항목</strong></p></td>
 </tr>
 </tbody>
